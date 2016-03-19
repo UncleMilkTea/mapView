@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10089" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10072.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="tWw-cZ-aiM">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                            </mapView>
+                            <button opaque="NO" tag="30" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YXU-ac-mBJ">
+                                <rect key="frame" x="530" y="450" width="30" height="30"/>
+                                <color key="tintColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <state key="normal" title="路况"/>
+                                <connections>
+                                    <action selector="roadCondition:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F7A-72-2DW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P1y-rH-ORb">
+                                <rect key="frame" x="10" y="531" width="59" height="59"/>
+                                <state key="normal" image="btn_map_locate"/>
+                                <state key="highlighted" image="btn_map_locate_hl"/>
+                                <connections>
+                                    <action selector="currentLoctionBtn" destination="BYZ-38-t0r" eventType="touchUpInside" id="1eS-Kf-MCw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z2G-6O-vzh">
+                                <rect key="frame" x="530" y="400" width="30" height="30"/>
+                                <color key="tintColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <state key="normal" title="标准"/>
+                                <connections>
+                                    <action selector="switchMMapView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X7h-EC-yB1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bvL-fA-HN1">
+                                <rect key="frame" x="530" y="350" width="30" height="30"/>
+                                <color key="tintColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <state key="normal" title="卫星"/>
+                                <connections>
+                                    <action selector="switchMMapView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FPD-Cd-vNa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xXP-hO-Lmh">
+                                <rect key="frame" x="516" y="550" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="8qf-zd-PO7"/>
+                                    <constraint firstAttribute="width" constant="22" id="SzT-fQ-YxM"/>
+                                </constraints>
+                                <state key="normal" image="Snip20160319_2"/>
+                                <connections>
+                                    <action selector="biggerAndSmaller:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZWN-0x-Za5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z5Q-MZ-xtt">
+                                <rect key="frame" x="558" y="542" width="22" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="22" id="5Hb-iD-uHc"/>
+                                    <constraint firstAttribute="height" constant="38" id="MhM-6Z-qQ8"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="biggerAndSmaller:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HDE-ph-2MU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="40" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6sW-wS-A9H">
+                                <rect key="frame" x="530" y="500" width="30" height="30"/>
+                                <color key="tintColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <state key="normal" title="鸟瞰"/>
+                                <connections>
+                                    <action selector="switchMMapView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SbN-Dj-PCr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xXP-hO-Lmh" firstAttribute="top" secondItem="6sW-wS-A9H" secondAttribute="bottom" constant="20" id="4db-y3-xQ1"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="P1y-rH-ORb" secondAttribute="bottom" constant="10" id="5SV-0G-fUA"/>
+                            <constraint firstItem="z5Q-MZ-xtt" firstAttribute="leading" secondItem="xXP-hO-Lmh" secondAttribute="trailing" constant="20" id="5wZ-34-kpP"/>
+                            <constraint firstItem="P1y-rH-ORb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="Kw6-VJ-F6h"/>
+                            <constraint firstAttribute="trailing" secondItem="tWw-cZ-aiM" secondAttribute="trailing" id="LJV-O6-NMA"/>
+                            <constraint firstItem="6sW-wS-A9H" firstAttribute="centerX" secondItem="YXU-ac-mBJ" secondAttribute="centerX" id="LcF-UR-gLR"/>
+                            <constraint firstItem="z5Q-MZ-xtt" firstAttribute="centerY" secondItem="P1y-rH-ORb" secondAttribute="centerY" id="MRK-c1-NgU"/>
+                            <constraint firstAttribute="trailing" secondItem="z5Q-MZ-xtt" secondAttribute="trailing" constant="20" id="NVN-Qu-EVj"/>
+                            <constraint firstItem="6sW-wS-A9H" firstAttribute="top" secondItem="YXU-ac-mBJ" secondAttribute="bottom" constant="20" id="Nbm-xo-1g7"/>
+                            <constraint firstItem="tWw-cZ-aiM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Xqk-t2-DtV"/>
+                            <constraint firstItem="Z2G-6O-vzh" firstAttribute="top" secondItem="bvL-fA-HN1" secondAttribute="bottom" constant="20" id="dnZ-zn-AFl"/>
+                            <constraint firstItem="YXU-ac-mBJ" firstAttribute="top" secondItem="Z2G-6O-vzh" secondAttribute="bottom" constant="20" id="f6Z-HJ-fJM"/>
+                            <constraint firstItem="tWw-cZ-aiM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="flb-gc-B7Z"/>
+                            <constraint firstItem="z5Q-MZ-xtt" firstAttribute="centerY" secondItem="xXP-hO-Lmh" secondAttribute="centerY" id="hpY-c7-arX"/>
+                            <constraint firstAttribute="trailing" secondItem="6sW-wS-A9H" secondAttribute="trailing" constant="40" id="lOe-bR-Lgj"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="z5Q-MZ-xtt" secondAttribute="bottom" constant="20" id="lmm-kD-zcc"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="tWw-cZ-aiM" secondAttribute="bottom" id="oK4-I4-PdI"/>
+                            <constraint firstItem="YXU-ac-mBJ" firstAttribute="centerX" secondItem="Z2G-6O-vzh" secondAttribute="centerX" id="pcP-hJ-sfH"/>
+                            <constraint firstItem="Z2G-6O-vzh" firstAttribute="centerX" secondItem="bvL-fA-HN1" secondAttribute="centerX" id="tNR-hX-95s"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="tWw-cZ-aiM" id="OkZ-qu-8dj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="330" y="192"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Snip20160319_2" width="45" height="45"/>
+        <image name="btn_map_locate" width="59" height="59"/>
+        <image name="btn_map_locate_hl" width="59" height="59"/>
+    </resources>
+</document>
